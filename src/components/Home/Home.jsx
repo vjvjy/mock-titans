@@ -37,7 +37,7 @@ const Home = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {delhiPlayers.map((item, index) => (
+                            {firstHalf.map((item, index) => (
                                 <tr key={index}>
                                     {header
                                         .filter((head) => head !== "_id" && head !== "__v")
@@ -50,7 +50,7 @@ const Home = () => {
             </div>
     
             {/* Right Table (Second Half) */}
-            {/* <div className="table-section">
+            <div className="table-section">
                 <p className="heading">Remaining Players</p>
                 <div className="scroll-container">
                     <table className="player-table">
@@ -72,7 +72,7 @@ const Home = () => {
                         </tbody>
                     </table>
                 </div>
-            </div> */}
+            </div>
         </div>
     </div>
     
