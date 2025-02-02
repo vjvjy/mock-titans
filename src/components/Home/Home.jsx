@@ -9,7 +9,7 @@ const Home = () => {
     const secondHalf = delhiPlayers.slice(midIndex);    // Second half for right side
     
     useEffect(() => {
-        fetch("http://localhost:3000/players")
+        fetch("https://auction-titans-backend.onrender.com/players")
             .then((res) => res.json())
             .then((data) => {
                 setPlayers(data);
