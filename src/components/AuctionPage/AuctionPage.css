@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #1c4e80;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .header .nav a:hover {
+    color: #fbc02d;
+  }
+  
+  .header .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Auction Section */
+  .auction-container {
+    padding: 20px;
+  }
+  
+  .player-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .player-card img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .player-info h2 {
+    margin: 0 0 10px;
+    color: #1c4e80;
+  }
+  
+  .player-info .stats {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Bidding Section */
+  .bidding-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .bidding-panel .bid-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bidding-panel .bid-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1c4e80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bidding-panel .bid-buttons button:hover {
+    background-color: #fbc02d;
+    color: #1c4e80;
+  }
+  
+  .bidding-panel .place-bid {
+    font-size: 18px;
+    background-color: #fbc02d;
+    color: #1c4e80;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bidding-panel .place-bid:hover {
+    background-color: #1c4e80;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1c4e80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    color: #fbc02d;
+    text-decoration: none;
+  }
+  
