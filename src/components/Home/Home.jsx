@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Home.css"
 const Home = () => {
     const [players, setPlayers] = useState([]);
@@ -7,6 +8,7 @@ const Home = () => {
     const midIndex = Math.ceil(delhiPlayers.length / 2); // Find the midpoint
     const firstHalf = delhiPlayers.slice(0, midIndex);  // First half for left side
     const secondHalf = delhiPlayers.slice(midIndex);    // Second half for right side
+    const nav = useNavigate();
     
     useEffect(() => {
         fetch("https://auction-titans-backend.onrender.com/players")
@@ -17,10 +19,15 @@ const Home = () => {
             });
     }, []);
 
+    const handleNavigation = (e) => {
+        e.preventDefault();
+        nav("/AuctionPage")
+    }
+
     return (
         <div className="container">
         {/* Go To Auction button at top-left */}
-        <button className="auction-btn">Go To Auction</button>
+        <button className="auction-btn" onClick={(e) => handleNavigation(e)}>Go To Auction</button>
     
         {/* Table Container with Two Sections */}
         <div className="table-wrapper">
