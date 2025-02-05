@@ -7,13 +7,11 @@ const AuctionPage = () => {
 
   const [player, setPlayer] = useState(null);
 
-  let randomPlayer;
-
   useEffect(() => {
     fetch("https://auction-titans-backend.onrender.com/players")
       .then((res) => res.json())
       .then((data) => {
-        randomPlayer = Math.floor(Math.random() * data.length);
+        const randomPlayer = Math.floor(Math.random() * data.length);
         console.log(randomPlayer, data[randomPlayer]);
         setPlayer(data[randomPlayer]);
       });
