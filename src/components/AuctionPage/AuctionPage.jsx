@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 // import "./AuctionPage.css"; // Assuming CSS is in the same folder
 
 const AuctionPage = () => {
-  const [currentBid, setCurrentBid] = useState(2000000); // Starting bid in INR
-  const [biddingTeam, setBiddingTeam] = useState("Team A");
+  // const [currentBid, setCurrentBid] = useState(2000000); // Starting bid in INR
+  // const [biddingTeam, setBiddingTeam] = useState("Team A");
 
   const [player, setPlayer] = useState(null);
 
